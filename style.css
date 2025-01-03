@@ -346,6 +346,135 @@ body {
 .certificate-button:hover {
     background-color: #49c581;
 }
+
+/* Education Section */
+
+#education {
+    padding: 100px 40px;
+    background-color:#100b18be;; /* Same background as the certification section */
+    text-align: center;
+    color: #2c3e50; /* Adjusted text color for better contrast */
+}
+
+#education h2 {
+    font-size: 2.5rem; /* Larger and more prominent font size */
+    color: white; /* Deep and elegant color */
+    font-weight: 700; /* Bold for emphasis */
+    text-transform: uppercase; /* Capitalized for impact */
+    margin-bottom: 50px; /* Space below the title */
+    letter-spacing: 1.5px; /* Enhanced spacing for readability */
+    position: relative;
+    z-index: 2;
+    text-shadow: 0 3px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Adding an underline effect to the education title */
+#education h2::after {
+    content: "";
+    position: absolute;
+    bottom: -10px; /* Positioned below the text */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px; /* Width of the underline */
+    height: 4px; /* Thickness of the underline */
+    border-radius: 2px; /* Rounded edges */
+}
+
+.timeline {
+    position: relative;
+    list-style: none;
+    margin: 0 auto;
+    padding: 0;
+    max-width: 1000px;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 4px;
+    height: 100%;
+    background: linear-gradient(180deg, #00bcd4, #00bcd4);
+    z-index: 1;
+}
+
+.timeline-item {
+    position: relative;
+    margin: 20px 0;
+}
+
+.timeline-item:nth-child(odd) {
+    padding-left: calc(50% + 40px);
+    text-align: left;
+}
+
+.timeline-item:nth-child(even) {
+    padding-right: calc(50% + 40px);
+    text-align: right;
+}
+
+.icon {
+    position: absolute;
+    top: 70px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background:#00bcd4;;
+    color: white;
+    font-size: 2rem; /* Larger icon size */
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Horizontal Connector Update */
+.timeline-item .icon::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform: translateY(50%);
+    height: 4px;
+    background: linear-gradient(90deg, black, #00bcd4);
+    z-index: -1;
+}
+
+/* For odd items (left side) */
+.timeline-item:nth-child(odd) .icon::after {
+    left: 50%; /* Start from the center */
+    right: -50%; /* Extend to the right */
+}
+
+/* For even items (right side) */
+.timeline-item:nth-child(even) .icon::after {
+    left: -50%; /* Extend to the left */
+    right: 50%; /* Stop at the center */
+}
+
+.timeline-content {
+    background: #1e2235;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    z-index: 2;
+    position: relative;
+}
+
+.timeline-content h3 {
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+    color: whitesmoke;
+}
+
+.timeline-content p {
+    font-size: 1rem;
+    color: white;
+}
 /* Skills Section */
 
 .skills-section {
