@@ -351,7 +351,7 @@ body {
 
 #education {
     padding: 100px 40px;
-    background-color:#100b18be;; /* Same background as the certification section */
+    background-color:#100b18be; /* Same background as the certification section */
     text-align: center;
     color: #2c3e50; /* Adjusted text color for better contrast */
 }
@@ -480,7 +480,7 @@ body {
 .skills-section {
     padding: 30px 10px;
     text-align: center;
-    background-color: #081222;
+    background-color:#100b18be;
     color: #fff;
     margin-top: 85px;
     margin-bottom: 60px;
